@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parametros</title>
+</head>
+<body>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            color: wheat;
+        }
+        body{
+            background-color: black;
+            text-align: center;
+        }
+        ul{
+            display: flex;
+            gap: 50px;
+        }
+        li{
+            cursor: pointer;
+            text-align: center;
+        }
+        li:hover{
+            border-bottom: 1px solid rgba(245, 222, 179, 0.267);
+        }
+        div{
+            margin: 30px;
+        }
+        div p{
+            margin: 30px;
+        }
+        iframe{
+            height: 300px;
+            width: 90%;
+        }
+    </style>
+
+    <h1>Notas</h1>
+    <h2>escolha a música</h2>
+    <ul>
+        <li onclick="escolha('Hoobastank')">Hoobastank - The Reason</li>
+        <li onclick="escolha('Doors')">3 Doors Down - Here Without You</li>
+    </ul>
+
+
+<div  style="display: none;" id="Doors">
+   
+
+    <p>
+        A hundred days have made me older
+Since the last time that I saw your pretty face
+A thousand lies have made me colder
+And I don't think I can look at this the same
+But all the miles that separate
+They disappear now when I'm dreaming of your face
+
+I'm here without you, baby
+But you're still on my lonely mind
+I think about you, baby
+And I dream about you all the time
+I'm here without you, baby
+But you're still with me in my dreams
+And tonight, it's only you and me
+
+The miles just keep rolling
+As the people leave their way to say hello
+I've heard this life is overrated
+But I hope that it gets better as we go
+
+I'm here without you, baby
+But you're still on my lonely mind
+I think about you, baby
+And I dream about you all the time
+I'm here without you, baby
+But you're still with me in my dreams
+And tonight, girl, it's only you and me
+
+Everything I know, and anywhere I go
+It gets hard, but it won't take away my love
+And when the last one falls, when it's all said and done
+It gets hard, but it won't take away my love
+
+I'm here without you, baby
+But you're still on my lonely mind
+I think about you, baby
+And I dream about you all the time
+I'm here without you, baby
+But you're still with me in my dreams
+And tonight, girl, it's only you and me.
+    </p>
+    <iframe  src="https://www.youtube.com/embed/kTrRGdJrEBM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+    <div style="display: none;" id="Hoobastank">
+        <p >
+            I'm not a perfect person
+    There's many things I wish I didn't do
+    But I continue learning
+    I never meant to do those things to you
+    And so, I have to say before I go
+    That I just want you to know
+    I've found a reason for me
+    To change who I used to be
+    A reason to start over new
+    And the reason is you
+    I'm sorry that I hurt you
+    It's something I must live with everyday
+    And all the pain I put you through
+    I wish that I could take it all away
+    And be the one who catches all your tears
+    That's why I need you to hear
+    I've found a reason for me
+    To change who I used to be
+    A reason to start over new
+    And the reason is you
+    And the reason is you
+    And the reason is you
+    And the reason is you
+    I'm not a perfect person
+    I never meant to do those things to you
+    And so I have to say before I go
+    That I just want you to know
+    I've found a reason for me
+    To change who I used to be
+    A reason to start over new
+    And the reason is you
+    I've found a reason to show
+    A side of me you didn't know
+    A reason for all that I do
+    And the reason is you
+        </p>
+        <iframe  src="https://www.youtube.com/embed/fV4DiAyExN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </div>
+
+<script>
+
+    function escolha(el){
+        var display = document.getElementById(el).style.display;
+        if(display == "none")
+            document.getElementById(el).style.display = '';
+        else
+            document.getElementById(el).style.display = 'none';
+    }
+    
+</script>
+
+    
+</body>
+</html>
